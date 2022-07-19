@@ -1,0 +1,31 @@
+﻿@page
+@model Measurement.Pages.SignInModel
+@{
+}
+<main>
+	<div class="form-contain div-contain">
+		<fieldset>
+			<legend>Zarejestruj Się</legend>
+			<form>
+				<label>Em@il</label><br />
+				<input type="text" /><br />
+				<label>Nazwa użytkownika</label><br />
+				<input type="text" /><br />
+				<label>Hasło</label><br />
+				<input type="password" /><br />
+				<label>Rodzaj pomiarów</label><br />
+				<div>
+				<input type="radio" id="measurement" name="measurement" value="measurement" />
+					<label for="measurement">Pomiary ciała</label></div>
+				<div><input type="radio" id="streght" name="streght" value="streght" />
+					<label for="streght">Pomiary siły</label></div>
+				<div><input type="radio" id="both" name="both" value="both" />
+					<label for="both">Oba</label></div>
+
+				<br />
+				<br />
+				<input type="submit" value="Zarejestruj" />
+			</form>
+		</fieldset>
+	</div>
+</main>
